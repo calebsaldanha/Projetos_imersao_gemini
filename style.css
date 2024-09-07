@@ -1,0 +1,269 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-image: url('https://c.wallhere.com/photos/b4/27/1366x768_px_abstract_black_circle_neon_Purple-783922.jpg!d');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Paleta de cores */
+:root {
+    --cor-principal: #003366; /* Azul marinho */
+    --cor-secundaria: #004080; /* Azul escuro */
+    --cor-terciaria: #ffffff; /* Branco */
+    --cor-fundo-card: #000000; /* Preto */
+    --cor-titulo: #ffffff; /* Branco */
+    --cor-texto: #d3d3d3; /* Cinza claro */
+    --cor-footer: #333333; /* Cinza escuro */
+    --cor-borda-footer: #444; /* Cinza médio para bordas do rodapé */
+    --cor-botoes-github: #000000; /* Preto para os botões do GitHub */
+    --cor-botoes-github-hover: #004080; /* Azul escuro para hover */
+}
+
+/* Estiliza o título principal */
+h1 {
+    font-size: 2.5rem; 
+    color: var(--cor-titulo); 
+    text-align: center; 
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adicionado para destacar o título */
+}
+
+/* Conteúdo do card */
+.conteudo-card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ocupa o espaço restante do card */
+}
+
+/* Estilize o objetivo do projeto */
+.objetivo {
+    font-size: 0.75rem;
+    color: var(--cor-texto);
+    margin-top: 8px;
+    padding: 4px;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    border-radius: 4px;
+}
+
+/* Estilize o título e a descrição */
+h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--cor-titulo);
+}
+
+.desenvolvedor {
+    font-size: 0.85rem;
+    color: var(--cor-texto);
+}
+
+.descricao {
+    font-size: 0.85rem;
+    color: var(--cor-texto);
+    margin-top: 8px;
+}
+/* Estiliza o contêiner do botão do GitHub */
+.botoes-github-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão no contêiner */
+    margin: 20px 0; /* Margem superior e inferior para espaçamento */
+}
+
+/* Estiliza o botão do GitHub */
+.botoes-github {
+    background-color: #000000; /* Preto para o fundo do botão */
+    color: #ffffff; /* Branco para o texto do botão */
+    padding: 12px 20px; /* Ajuste do padding para um bloco menor */
+    border: 2px solid #000000; /* Borda preta */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: inline-block; /* Ajusta o botão ao tamanho do conteúdo */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transições suaves */
+}
+
+.botoes-github:hover {
+    background-color: #004080; /* Azul escuro para o fundo ao passar o mouse */
+    color: #ffffff; /* Branco para o texto ao passar o mouse */
+    border-color: #004080; /* Azul escuro para a borda ao passar o mouse */
+}
+
+
+/* Estiliza a nova seção de explicação */
+.explicacao-container {
+    display: flex;
+    flex-direction: column; /* Muda a direção do layout para coluna */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Preto semi-transparente */
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border: 2px solid var(--cor-principal); /* Adiciona borda para destaque */
+    position: relative; /* Para garantir que o título esteja corretamente posicionado */
+}
+
+.explicacao-container img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem; /* Espaço entre a imagem e o texto */
+}
+
+.explicacao-container .texto {
+    text-align: center; /* Centraliza o texto */
+}
+
+.explicacao-container h2 {
+    font-size: 1.5rem;
+    color: var(--cor-titulo);
+    margin-bottom: 0.75rem;
+    text-align: center; /* Centraliza o título */
+    width: 100%; /* Faz com que o título ocupe a largura total da seção */
+}
+
+.explicacao-container p {
+    font-size: 1rem;
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+
+
+/* Estiliza as seções da página */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section input {  
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-texto);
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: var(--cor-fundo-card);
+    border: 1px solid var(--cor-terciaria);
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: var(--cor-secundaria);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza o contêiner do bloco de resultados */
+#resultados {
+    display: flex;
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    padding: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Transições suaves ao rolar */
+    gap: 16px; /* Espaço entre os cards */
+}
+.resultados-pesquisa {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem; /* Aumenta o espaço entre os itens */
+    padding: 1.5rem; /* Aumenta o padding do contêiner */
+    box-sizing: border-box;
+}
+
+/* Estiliza o bloco de resultados */
+.bloco-background {
+    background-color: var(--cor-fundo-card);
+    padding: 2rem; /* Aumenta o padding do bloco */
+    border-radius: 0.8rem; /* Aumenta o arredondamento das bordas */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+}
+
+/* Estiliza o conteúdo dos cards dentro do bloco */
+.item-resultado {
+    background: var(--cor-fundo-card);
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 320px; /* Largura do card */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaço entre os elementos do card */
+    padding: 1.5rem; /* Padding interno do card */
+    justify-content: space-between;
+    align-items: stretch; /* Ajusta a largura dos itens internos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.9;
+    margin-right: 16px;
+    min-width: 280px;
+    flex: 0 0 auto; /* Impede o card de encolher */
+}
+
+/* Ajusta o tamanho da fonte nos títulos dentro do card */
+.item-resultado h3 {
+    margin: 0;
+    font-size: 1.3rem; /* Aumenta o tamanho da fonte dos títulos */
+}
+
+/* Ajusta o tamanho da fonte nas descrições dentro do card */
+.item-resultado .descricao {
+    font-size: 1rem; /* Aumenta o tamanho da fonte das descrições */
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: var(--cor-footer); /* Cor escura para o fundo do rodapé */
+    color: var(--cor-texto); /* Cor clara para o texto */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px; /* Padding ajustado para melhor visualização */
+    font-size: 0.9em; /* Tamanho da fonte ajustado para melhor visualização */
+    border-top: 1px solid var(--cor-borda-footer); /* Linha no topo com cor definida */
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza os links no rodapé */
+footer a {
+    color: var(--cor-texto); /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 10px; /* Espaço entre os links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+
